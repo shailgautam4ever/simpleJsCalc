@@ -6,10 +6,10 @@ let op = ['+', '-', '*', '/'];
 function update(value) {
     if(!op.includes(value)){
         if(!operation){
-            firstInput += value;
+            firstInput = value;
             document.getElementById('screen').value = firstInput;
         }else{
-            secondInput += value;
+            secondInput = value;
             document.getElementById('screen').value =  firstInput + operation + secondInput;
         }
     }else{
